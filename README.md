@@ -46,7 +46,7 @@ ATTRS{idVendor}=="0403",ATTRS{idProduct}=="6001",MODE="0666"
 ```
 $ screen /dev/ttyUSB0 115200
 ```
-You should be able to communicate with your device now using a serial connection.
+You should be able to communicate with your device now using a serial connection. I'm connected to an MSP430FR5994 microcontroller configured for UART communication at a baud rate of 115200 bps and I can now send commands back and forth to the device in the terminal. 
 
 
 * Press `Ctrl-a` then `k` to quit the serial session.
