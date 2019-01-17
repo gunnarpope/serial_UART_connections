@@ -44,7 +44,7 @@ ATTRS{idVendor}=="0403",ATTRS{idProduct}=="6001",MODE="0666"
 
 * Now, unplug your FTDI cable and replug it again. Open a serial session with a your device using the screen command `$ screen /dev/ttyUSB0 <baudrate>` where `<baudrate>` is the datarate that you have configured your peripheral microcontroller to operate at. Usually, a baudrate of 9600 or 115200 are most common.
 ```
-$ screen /dev/ttyUSB0 115200
+$ sudo screen /dev/ttyUSB0 115200
 ```
 You should be able to communicate with your device now using a serial connection. I'm connected to an MSP430FR5994 microcontroller configured for UART communication at a baud rate of 115200 bps and I can now send commands back and forth to the device in the terminal. 
 
